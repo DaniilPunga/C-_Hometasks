@@ -1,0 +1,13 @@
+E:\c#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Bankomat.exe
+E:\c#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Bankomat.deps.json
+E:\c#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Bankomat.runtimeconfig.json
+E:\c#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Bankomat.runtimeconfig.dev.json
+E:\c#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Bankomat.dll
+E:\c#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Bankomat.pdb
+E:\c#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\Bankomat.csprojAssemblyReference.cache
+E:\c#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\Bankomat.AssemblyInfoInputs.cache
+E:\c#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\Bankomat.AssemblyInfo.cs
+E:\c#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\Bankomat.csproj.CoreCompileInputs.cache
+E:\c#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\Bankomat.dll
+E:\c#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\Bankomat.pdb
+E:\c#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\Bankomat.genruntimeconfig.cache
