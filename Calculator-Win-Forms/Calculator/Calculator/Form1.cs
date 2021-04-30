@@ -90,35 +90,7 @@ namespace Calculator
             }
             
         }
-        /*
-        private void calculate(string equation) {
-            int begin_brake=-1;
-            int end_brake=-1;
-         for ( int i =0;i< equation.Length; i++)
-            {
-                if (equation[i] == '(')
-                {
-                    long first_brake = 1;
-                    long second_brake = 0;
-                    int j = i;
-                    while (second_brake!= first_brake)
-                    {
-                        if (equation[j] == '(')
-                        {
-                            first_brake ++;
-                        }
-                        if (equation[j] == ')')
-                        {
-                            second_brake++;
-                        }
-
-                        j++;
-                    }
-                }
-            }
-
-        }*/
-
+        
         public static double Result(string expr)
         {
             var postfix = ToPostfixForm(ParseStr(expr));
@@ -153,10 +125,9 @@ namespace Calculator
             return list;
         }
 
-        // private static bool IsOperator(string ch) => ch == "+" || ch == "*" || ch == "/" || ch == "-";
         private static bool IsOperator(string ch)
         {
-            if(ch == "+" || ch == "*" || ch == "/" || ch == "-")
+            if(ch == "*" || ch == "+" || ch == "/" || ch == "-")
             {
                 return true;
             }
@@ -168,7 +139,7 @@ namespace Calculator
 
         private static string ToPostfixForm(List<string> expr)
         {
-            var stack = new Stack<string>();
+            var form = new Stack<string>();
             expr.Insert(0, "(");
             expr.Add(")");
             string postfix = string.Empty;
@@ -177,43 +148,43 @@ namespace Calculator
             {
                 if (expr[i] == "(")
                 {
-                    stack.Push("(");
+                    form.Push("(");
                     ++i;
                 }
                 else if (expr[i] == "*" || expr[i] == "/")
                 {
-                    if (stack.Peek() == "*" || stack.Peek() == "/")
+                    if (form.Peek() == "*" || form.Peek() == "/")
                     {
-                        postfix += stack.Pop() + " ";
+                        postfix += form.Pop() + " ";
                     }
                     else
                     {
-                        stack.Push(expr[i]);
+                        form.Push(expr[i]);
                         ++i;
                     }
                 }
                 else if (expr[i] == "+" || expr[i] == "-")
                 {
-                    if (stack.Count == 0 || stack.Peek() == "(")
+                    if (form.Count == 0 || form.Peek() == "(")
                     {
-                        stack.Push(expr[i]);
+                        form.Push(expr[i]);
                         ++i;
                     }
                     else
                     {
-                        postfix += stack.Pop() + " ";
+                        postfix += form.Pop() + " ";
                     }
                 }
                 else if (expr[i] == ")")
                 {
-                    if (stack.Peek() == "(")
+                    if (form.Peek() == "(")
                     {
-                        stack.Pop();
+                        form.Pop();
                         ++i;
                     }
                     else
                     {
-                        postfix += stack.Pop() + " ";
+                        postfix += form.Pop() + " ";
                     }
                 }
                 else if (double.TryParse(expr[i], out double _))
@@ -223,7 +194,7 @@ namespace Calculator
                 }
             }
 
-            if (stack.Count != 0)
+            if (form.Count != 0)
             {
                 throw new ArgumentException("Не удалось перевести выражение в постфиксную форму");
             }
@@ -277,35 +248,7 @@ namespace Calculator
             }
             return 0;
         }
-        private void calculate()
-        {
-            //string[] subs=textBox1.Text
-            switch (count)
-            {
-                case 1:
-                    b = a + float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
-
-                case 2:
-                    b = a - float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
-                case 3:
-                    b = a * float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
-                case 4:
-                    b = a / float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
-
-                default:
-                    break;
-            }
-
-        }
-
+     
         private void button4_Click(object sender, EventArgs e)
         {
             textBox1.Text += "+";

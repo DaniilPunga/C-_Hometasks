@@ -17,3 +17,13 @@ E:\c#\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.csproj.Gen
 E:\c#\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 E:\c#\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.exe
 E:\c#\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.pdb
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\bin\Debug\Calculator.exe.config
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\bin\Debug\Calculator.exe
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\bin\Debug\Calculator.pdb
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.exe
+E:\c#\C-_Hometasks\Calculator-Win-Forms\Calculator\Calculator\obj\Debug\Calculator.pdb
