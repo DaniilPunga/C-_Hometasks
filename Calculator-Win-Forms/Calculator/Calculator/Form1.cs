@@ -253,25 +253,6 @@ namespace Calculator
             return buffer;
         }
 
-        private static double OperationsFinal(double firstNum, double secondNum, string operation)
-        {
-            switch (operation)
-            {
-                case "+":
-                    return (firstNum + secondNum);
-                case "-":
-                    return firstNum - secondNum;
-                case "*":
-                    return firstNum * secondNum;
-                case "/":
-                    if (secondNum == 0)
-                    {
-                        throw new DivideByZeroException();
-                    }
-                    return firstNum / secondNum;
-            }
-            return 0;
-        }
      
         private void button4_Click(object sender, EventArgs e)
         {
