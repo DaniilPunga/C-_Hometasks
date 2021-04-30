@@ -216,7 +216,31 @@ namespace Calculator
                 {
                     double secondNumber = stack.Pop();
                     double firstNumber = stack.Pop();
-                    stack.Push(OperationsFinal(firstNumber, secondNumber, lit));
+                    double LocalResult;
+                    switch (lit)
+                    {
+                        case "+":
+                            LocalResult = (firstNumber + secondNumber);
+                            break;
+                        case "-":
+                            LocalResult = firstNumber - secondNumber;
+                            break;
+                        case "*":
+                            LocalResult = firstNumber * secondNumber;
+                            break;
+                        case "/":
+                            if (secondNumber == 0)
+                            {
+                                throw new DivideByZeroException();
+                            }
+                            LocalResult = firstNumber / secondNumber;
+                            break;
+                        default:
+                            LocalResult = 0;
+                            break;
+                    }
+                    
+                    stack.Push(LocalResult);
                 }
             }
 
