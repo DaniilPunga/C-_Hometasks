@@ -233,7 +233,14 @@ namespace Calculator
                             {
                                 throw new DivideByZeroException();
                             }
-                            LocalResult = firstNumber / secondNumber;
+                            try {
+                                LocalResult = firstNumber / secondNumber;
+                            }
+                            catch (DivideByZeroException)
+                            {
+                                Console.WriteLine("Division by zero.");
+                            }
+
                             break;
                         default:
                             LocalResult = 0;
